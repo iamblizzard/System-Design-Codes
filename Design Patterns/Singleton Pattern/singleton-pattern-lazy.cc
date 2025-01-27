@@ -1,5 +1,5 @@
 #include <mutex>
-#include "SingletonPatternLazy.h"
+#include "singleton-pattern-lazy.h"
 
 // Define static members outside the class
 SingletonPatternLazy* SingletonPatternLazy::instance = nullptr;

@@ -2,21 +2,21 @@ cc_binary(
     name = "main",
     srcs = ["main.cc"],
     deps = [
-        ":SingletonPatternEager",
-        "SingletonPatternLazy",
+        ":singleton-pattern-eager",
+        "singleton-pattern-lazy",
     ],
 )
 
 cc_library(
-    name = "SingletonPatternEager",
-    srcs = ["SingletonPatternEager.cc"],
-    hdrs = ["SingletonPatternEager.h"],
+    name = "singleton-pattern-eager",
+    srcs = ["singleton-pattern-eager.cc"],
+    hdrs = ["singleton-pattern-eager.h"],
     visibility = ["//visibility:public"],
 )
 
 cc_library(
-    name = "SingletonPatternLazy",
-    srcs = ["SingletonPatternLazy.cc"],
-    hdrs = ["SingletonPatternLazy.h"],
+    name = "singleton-pattern-lazy",
+    srcs = ["singleton-pattern-lazy.cc"],
+    hdrs = ["singleton-pattern-lazy.h"],
     visibility = ["//visibility:public"],
 )
