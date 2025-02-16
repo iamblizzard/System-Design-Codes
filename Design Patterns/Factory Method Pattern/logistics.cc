@@ -1,10 +1,10 @@
-#include "logistics.h"
-
 #include <iostream>
+
+#include "logistics.h"
 
 void Logistics::planDelivery() {
     Transport* transport = createTransport();
-    std::cout << transport->deliver() << std::endl;
+    transport->deliver();
 }
 
 Transport* RoadLogistics::createTransport() {
@@ -13,4 +13,8 @@ Transport* RoadLogistics::createTransport() {
 
 Transport* SeaLogistics::createTransport() {
     return new Ship();
+}
+
+Transport* AirLogistics::createTransport() {
+    return new Airplane();
 }

@@ -19,4 +19,9 @@ public:
     Transport* createTransport() override;
 };
 
+class AirLogistics : public Logistics {
+public:
+    Transport* createTransport() override;
+};
+
 #endif // LOGISTICS_H
