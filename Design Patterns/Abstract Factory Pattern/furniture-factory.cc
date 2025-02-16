@@ -17,6 +17,10 @@ CoffeeTable* ModernFurnitureFactory::createCoffeeTable() {
     return new ModernCoffeeTable();
 }
 
+Lamp* ModernFurnitureFactory::createLamp() {
+    return new ModernLamp();
+}
+
 // VictorianFurnitureFactory products
 
 Chair* VictorianFurnitureFactory::createChair() {
@@ -29,4 +33,8 @@ Sofa* VictorianFurnitureFactory::createSofa() {
 
 CoffeeTable* VictorianFurnitureFactory::createCoffeeTable() {
     return new VictorianCoffeeTable();
+}
+
+Lamp* VictorianFurnitureFactory::createLamp() {
+    return new VictorianLamp();
 }

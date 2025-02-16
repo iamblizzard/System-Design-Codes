@@ -6,6 +6,7 @@ cc_binary(
         ":chair",
         ":sofa",
         ":coffee-table",
+        ":lamp",
     ],
 )
 
@@ -17,6 +18,7 @@ cc_library(
         ":chair",
         ":sofa",
         ":coffee-table",
+        ":lamp",
     ],
     visibility = ["//visibility:public"],
 )
@@ -39,5 +41,12 @@ cc_library(
     name = "coffee-table",
     srcs = ["coffee-table.cc"],
     hdrs = ["coffee-table.h"],
+    visibility = ["//visibility:public"],
+)
+
+cc_library(
+    name = "lamp",
+    srcs = ["lamp.cc"],
+    hdrs = ["lamp.h"],
     visibility = ["//visibility:public"],
 )
