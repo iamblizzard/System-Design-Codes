@@ -1,3 +1,6 @@
+#ifndef FOREST_H
+#define FOREST_H
+
 #include "tree.h"
 
 #include <vector>
@@ -10,3 +13,5 @@ void drawTrees();
 private:
 std::vector<Tree*> trees_;
 };
+
+#endif // FOREST_H

@@ -1,3 +1,6 @@
+#ifndef SUPPORT_HANDLER_H
+#define SUPPORT_HANDLER_H
+
 enum Priority {
     BASIC, INTERMEDIATE, CRITICAL
 };
@@ -39,3 +42,5 @@ public:
 private:
     SupportHandler* next_;
 };
+
+#endif // SUPPORT_HANDLER_H
