@@ -8,10 +8,10 @@
 
 class CommercialAirplane : public Airplane {
     private:
-        AirTrafficControlTower* airTrafficControlTower;
+        AirTrafficControlTower* air_traffic_control_tower_;
     public:
         CommercialAirplane(AirTrafficControlTower* tower) :
-            airTrafficControlTower(tower) {}
+        air_traffic_control_tower_(tower) {}
         void requestLanding() override;
         void requestTakeoff() override;
         void notifyAirTrafficControl(std::string message) override;

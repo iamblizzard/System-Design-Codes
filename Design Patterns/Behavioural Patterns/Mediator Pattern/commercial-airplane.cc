@@ -4,11 +4,11 @@
 #include <string>
 
 void CommercialAirplane::requestLanding() {
-    airTrafficControlTower->requestLanding(this);
+    air_traffic_control_tower_->requestLanding(this);
 }
 
 void CommercialAirplane::requestTakeoff() {
-    airTrafficControlTower->requestTakeoff(this);
+    air_traffic_control_tower_->requestTakeoff(this);
 }
 
 void CommercialAirplane::notifyAirTrafficControl(std::string message) {
