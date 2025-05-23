@@ -3,11 +3,8 @@
 #include "us-adapter.h"
 
 int main () {
-    EuSocket euSocket;
+    EuSocket eu_socket;
 
-    // UsCharger usCharger;
-    // usCharger.chargeDevice(euSocket);
-
-    UsAdapter usAdapter;
-    usAdapter.chargeDevice(euSocket);
+    UsAdapter* us_adapter = new UsAdapter();
+    us_adapter->chargeDevice(eu_socket);
 }
