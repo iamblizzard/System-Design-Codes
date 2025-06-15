@@ -8,16 +8,21 @@ enum Color {
     LIGHT_GREEN, DARK_GREEN, LIGHT_YELLOW
 };
 
+class Image {};
+
 class TreeType {
 public:
     TreeType(std::string name, Color color)
-        : name_(name), color_(color) {}
+        : name_(name), color_(color) {
+            image_ = new Image(); // Assume Image is created here
+        }
 
     void draw(int x, int y);
 
 private:
     std::string name_;
     Color color_;
+    Image* image_;
 };
 
 class TreeTypeFactory {
