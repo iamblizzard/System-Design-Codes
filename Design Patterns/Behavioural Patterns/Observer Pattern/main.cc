@@ -18,5 +18,6 @@ int main() {
 
     // Remove an observer and set the weather again
     weather_station->removeObserver(phone_display);
+    std::cout << "\nPhone display removed as observer\n" << std::endl;
     weather_station->setWeather("Cloudy");
 }
