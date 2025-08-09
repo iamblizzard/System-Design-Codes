@@ -3,12 +3,12 @@
 #include "shape-visitors.h"
 
 int main() {
-    Circle* circle = new Circle(5);
-    Square* square = new Square(4);
-    Rectangle* rectangle = new Rectangle(3, 6);
+    Shape* circle = new Circle(5);
+    Shape* square = new Square(4);
+    Shape* rectangle = new Rectangle(3, 6);
 
-    AreaCalculator* areaCalculator = new AreaCalculator();
-    PerimeterCalculator* perimeterCalculator = new PerimeterCalculator();
+    ShapeVisitor* areaCalculator = new AreaCalculator();
+    ShapeVisitor* perimeterCalculator = new PerimeterCalculator();
 
     circle->accept(areaCalculator);
     square->accept(areaCalculator);
